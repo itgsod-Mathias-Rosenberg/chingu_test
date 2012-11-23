@@ -38,7 +38,7 @@ class Player < Chingu::GameObject
 	end
 
 	def up 
-		unless @y - 70 <= 0
+		unless @y - 85 <= 0
 			@y -= @speed
 		end
 	end
