@@ -7,8 +7,7 @@ class Game < Chingu::Window
 		super
 		self.input = {esc: :exit}
 		@player = Player.create
-		@targets = []
-		5.times { @targets << Target.create}
+		5.times { Target.create}
 	end
 
 	def update
@@ -33,7 +32,7 @@ class Player < Chingu::GameObject
 			holding_right: :right,
 			holding_up: :up,
 			holding_down: :down,
-			space: :fire
+			holding_space: :fire
 		}
 	end
 
